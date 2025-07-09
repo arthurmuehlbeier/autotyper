@@ -91,24 +91,7 @@ class AutoTyper:
 def main():
     parser = argparse.ArgumentParser(
         description="AutoTyper - Simulates human-like typing of text",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Type with 5 second delay
-  python autotyper.py -t "Hello, World!" -d 5
-  
-  # Type even faster
-  python autotyper.py -t "Super fast typing" --min-delay 0.01 --max-delay 0.02
-  
-  # Type using hotkey
-  python autotyper.py -t "Triggered by hotkey" -k "ctrl+shift+t"
-  
-  # Type from file
-  python autotyper.py -f message.txt -d 3
-  
-  # Use regular Enter for newlines (default is Alt+Enter)
-  python autotyper.py -t "Line 1\nLine 2" -d 5 --use-enter
-        """
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
     # Text input options
